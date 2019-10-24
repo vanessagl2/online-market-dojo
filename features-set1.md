@@ -66,6 +66,7 @@ to get products that are offered by your API.
     "data": {
         "products": [
             {
+                "id": "string",
                 "name": {
                     "fullName": "string",
                     "displayName": "string"
@@ -76,6 +77,7 @@ to get products that are offered by your API.
                 }
             },
             {
+                "id": "string",
                 "name": {
                     "fullName": "string",
                     "displayName": "string"
