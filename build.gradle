@@ -44,6 +44,8 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 
+	compile 'org.springframework.boot:spring-boot-starter-security'
+
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 		exclude group: 'junit', module: 'junit'
@@ -56,6 +58,9 @@ dependencies {
 	testRuntime 'org.junit.vintage:junit-vintage-engine:5.4.2'
 	testCompile 'com.github.caryyu:spring-embedded-redis-server:1.1'
 	testCompile 'org.junit.jupiter:junit-jupiter-params:5.4.2'
+
+	//Library for testing API outputs
+	testCompile 'io.rest-assured:rest-assured:3.1.0'
 }
 
 dependencyManagement {
